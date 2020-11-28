@@ -1,10 +1,11 @@
 console.log("%c _______             __  __                     \r\n\/       \\           \/  |\/  |                    \r\n$$$$$$$  |  ______  $$ |$$\/   ______   __    __ \r\n$$ |__$$ | \/      \\ $$ |\/  | \/      \\ \/  \\  \/  |\r\n$$    $$< \/$$$$$$  |$$ |$$ |\/$$$$$$  |$$  \\\/$$\/ \r\n$$$$$$$  |$$ |  $$ |$$ |$$ |$$ |  $$ | $$  $$<  \r\n$$ |  $$ |$$ \\__$$ |$$ |$$ |$$ \\__$$ | \/$$$$  \\ \r\n$$ |  $$ |$$    $$\/ $$ |$$ |$$    $$\/ \/$$\/ $$  |\r\n$$\/   $$\/  $$$$$$\/  $$\/ $$\/  $$$$$$\/  $$\/   $$\/ \r\n                                                \r\n                                                \r\n                                                ",
     "color: green")
 console.log("V1.2.0 Beta has loaded!")
-console.log("Scanning for items..")
-setTimeout(()=>console.log("1,631 limited items found!"), 3300)
-setTimeout(()=>console.log("Starting threads.."), 3300)
-setTimeout(()=>console.log("%cRunning! Note: Do not close this terminal or the window", "color: yellow"), 6300)
+console.log("Scanning items..")
+setTimeout(()=>console.log("Checking resellers!"), 3300)
+setTimeout(()=>console.log("Checking past purchases.."), 3300)
+setTimeout(() => console.log("%cRunning! Note: Checking, do not close this terminal or window", "color: yellow"), 6300)
+setTimeout(()=>console.log("%cClean", "color: green"), 12000)
 
 // cut the bs --
 
